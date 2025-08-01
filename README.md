@@ -2,6 +2,8 @@
 
 Next.js + Supabase 기반의 미니 커머스 프로젝트
 
+[**Fresh&Fast 바로가기**](https://fresh-and-fast.vercel.app/)
+
 ![메인 배너](https://github.com/minhyepark-dev/fresh-and-fast/blob/main/public/images/og-image.jpg?raw=true)
 
 ## 🚀 소개
@@ -71,3 +73,12 @@ fresh-and-fast/
 ├── public/              # 정적 파일
 └── ...
 ```
+
+## 🌍 배포
+
+이 프로젝트는 [**Vercel**](https://vercel.com/)을 사용해 배포되었습니다.
+
+- **프로덕션 URL**: [https://fresh-and-fast.vercel.app](https://fresh-and-fast.vercel.app)
+- **CI/CD**: GitHub ↔ Vercel 연동, main 브랜치 푸시 시 자동 배포
+
+![Vercel Deploy](https://vercel.com/button)

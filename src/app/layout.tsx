@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Fresh & Fast',
     description: '신선한 과일과 채소를 오늘 안에 배송받으세요.',
-    url: 'https://your-site.com',
+    url: 'https://fresh-and-fast.vercel.app',
     siteName: 'Fresh & Fast',
     images: [
       {
-        url: 'https://your-site.com/og-image.jpg', // 1200x630 권장
+        url: 'https://github.com/minhyepark-dev/fresh-and-fast/blob/main/public/images/og-image.jpg?raw=true', // 1200x630 권장
         width: 1200,
         height: 630,
         alt: 'Fresh & Fast 배너',
@@ -26,7 +26,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Fresh & Fast',
     description: '신선한 과일과 채소를 오늘 안에 배송받으세요.',
-    images: ['https://your-site.com/og-image.jpg'],
+    images: [
+      'https://github.com/minhyepark-dev/fresh-and-fast/blob/main/public/images/og-image.jpg?raw=true',
+    ],
   },
 };
 

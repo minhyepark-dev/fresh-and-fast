@@ -2,7 +2,7 @@
 
 Next.js + Supabase 기반의 미니 커머스 프로젝트
 
-![메인 배너](public/images/og-image.png)
+![메인 배너](https://github.com/minhyepark-dev/fresh-and-fast/blob/main/public/images/og-image.jpg?raw=true)
 
 ## 🚀 소개
 

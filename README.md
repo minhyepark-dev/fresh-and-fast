@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Fresh&Fast
 
-## Getting Started
+Next.js + Supabase 기반의 미니 커머스 프로젝트
 
-First, run the development server:
+![메인 배너](public/images/og-image.png)
+
+## 🚀 소개
+
+Fresh&Fast는 **간단한 온라인 커머스 기능**을 구현한 사이드 프로젝트입니다.  
+상품 조회, 장바구니, 주문, 마이페이지, 회원가입/로그인 등 **기본적인 전자상거래 흐름**을 구현했습니다.
+
+## ✨ 주요 기능
+
+- **메인 페이지**
+  - 메인 배너, 추천 상품 리스트
+- **상품 목록 페이지**
+  - 무한 스크롤로 상품 불러오기
+- **상품 상세 페이지**
+  - Supabase 연동
+  - 좋아요 기능 (Optimistic UI)
+- **장바구니 페이지**
+  - Zustand 상태 관리
+  - 상품 추가/삭제, 수량 조절
+- **주문 기능**
+  - Supabase RLS 적용 (로그인 유저만 가능)
+- **마이페이지**
+  - 주문 내역, 주문 상세 조회
+- **회원가입/로그인**
+  - Supabase Auth
+  - react-hook-form + yup 유효성 검사
+  - 로그인 상태 유지 (Zustand persist)
+- **테스트 코드**
+  - Jest + React Testing Library
+- **리팩토링 및 성능개선**
+  - API 호출 공통화
+  - 이미지 webp 변환
+  - 좋아요 Optimistic UI
+  - 무한 스크롤 throttle 적용
+- **SEO**
+  - 오픈그래프(OG) 이미지 적용
+
+---
+
+## 🛠 기술 스택
+
+- **Frontend**: [Next.js 14](https://nextjs.org/), [React](https://react.dev/)
+- **Backend**: [Supabase](https://supabase.com/)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Form & Validation**: [react-hook-form](https://react-hook-form.com/), [Yup](https://github.com/jquense/yup)
+- **Testing**: [Jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Other**: Lodash(throttle), Sharp(webp 변환)
+
+---
+
+## 📂 폴더 구조
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+fresh-and-fast/
+├── app/                 # Next.js App Router 페이지
+│   ├── page.tsx         # 메인 페이지
+│   ├── products/        # 상품 목록/상세
+│   ├── cart/            # 장바구니
+│   ├── mypage/          # 마이페이지
+│   ├── login/           # 로그인
+│   └── signup/          # 회원가입
+├── components/          # 공통 컴포넌트
+├── lib/                 # API 호출, 유틸 함수
+├── store/               # Zustand 상태관리
+├── types/               # 타입 정의
+├── public/              # 정적 파일
+└── ...
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
